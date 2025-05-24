@@ -9,7 +9,7 @@
 
 ## 🖥️ 데모
 
-👉 [GitHub Pages에서 보기]("https://seong-nyang.github.io/password-notepad/")
+👉 [GitHub Pages에서 보기](https://seong-nyang.github.io/password-notepad/)
 
 
 ---
