@@ -177,12 +177,16 @@ button:hover {
   transition: background 0.3s ease;
 }
 
-.toggle {
+.toggle.active {
+  background: #6a5acd !important;
+}
+
+body.dark .toggle {
   background: #ccc;
 }
 
-.toggle.active {
-  background: #6a5acd;
+body.dark .toggle.active {
+  background: #6a5acd !important;
 }
 
 body.dark .toggle.active {
