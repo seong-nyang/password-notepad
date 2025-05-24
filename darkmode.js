@@ -7,5 +7,9 @@ darkToggle.addEventListener("click", () => {
 
   thumb.textContent = isDark ? "☀️" : "🌙";
 
-  darkToggle.classList.toggle("active", isDark);
+  if (isDark) {
+    darkToggle.classList.add("active");
+  } else {
+    darkToggle.classList.remove("active");
+  }
 });
