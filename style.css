@@ -167,13 +167,18 @@ button:hover {
 }
 
 /* 다크모드 토글 */
-.darkmode-toggle-wrapper {
+.toggle {
   position: relative;
   width: 50px;
   height: 25px;
   background: #ccc;
   border-radius: 25px;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle.active {
+  background: #6a5acd;
 }
 body.dark .sidebar {
   background: #2b2b3a;
