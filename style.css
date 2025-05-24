@@ -178,18 +178,6 @@ button:hover {
 }
 
 .toggle.active {
-  background: #6a5acd !important;
-}
-
-body.dark .toggle {
-  background: #ccc;
-}
-
-body.dark .toggle.active {
-  background: #6a5acd !important;
-}
-
-body.dark .toggle.active {
   background: #6a5acd;
 }
 body.dark .sidebar {
@@ -233,6 +221,9 @@ body.dark button:hover {
   transition: transform 0.3s ease;
 }
 .toggle.active .toggle-thumb {
+  transform: translateX(25px);
+}
+body.dark .toggle-thumb {
   transform: translateX(25px);
 }
 
