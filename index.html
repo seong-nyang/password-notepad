@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>비밀번호 저장소</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+  <script defer src="firebase-config.js"></script>
+  <script defer src="auth.js"></script>
+  <script defer src="toast.js"></script>
+  <script defer src="darkmode.js"></script>
+</head>
+<body>
+  <div class="container auth-container">
+    <header class="auth-header">
+      <h1>🔐 비밀번호 저장소</h1>
+      <div class="darkmode-toggle-wrapper">
+        <div id="darkmode-toggle" class="toggle">
+          <div class="toggle-thumb">🌙</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="tab-buttons">
+      <button id="login-tab" class="active">로그인</button>
+      <button id="signup-tab">회원가입</button>
+    </div>
+
+    <div class="form-wrapper form-tabs">
+      <form id="login-form" class="form-box">
+        <input type="email" id="login-email" placeholder="이메일" required />
+        <input type="password" id="login-password" placeholder="비밀번호" required />
+        <button type="submit">로그인</button>
+      </form>
+
+      <form id="signup-form" class="form-box hidden">
+        <input type="email" id="signup-email" placeholder="이메일" required />
+        <input type="password" id="signup-password" placeholder="비밀번호" required />
+        <button type="submit">회원가입</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+</body>
+</html>

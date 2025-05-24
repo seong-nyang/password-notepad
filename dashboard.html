@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>내 비밀번호</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+  <script defer src="firebase-config.js"></script>
+  <script defer src="passwordManager.js"></script>
+  <script defer src="toast.js"></script>
+  <script defer src="darkmode.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <header>
+        <h2>🔐 비밀번호 추가</h2>
+        <div class="darkmode-toggle-wrapper">
+          <div id="darkmode-toggle" class="toggle">
+            <div class="toggle-thumb">🌙</div>
+          </div>
+        </div>
+        <button id="logout-btn">로그아웃</button>
+      </header>
+      <form id="save-form">
+        <input type="text" id="site" placeholder="사이트 이름" required />
+        <input type="text" id="userid" placeholder="아이디" required />
+        <input type="password" id="userpw" placeholder="비밀번호" required />
+        <button type="submit">저장</button>
+      </form>
+    </aside>
+
+    <!-- 오른쪽 리스트 영역 -->
+    <main class="pw-display">
+      <h2>저장된 비밀번호</h2>
+      <div id="password-list" class="pw-table"></div>
+    </main>
+  </div>
+
+  <div id="toast"></div>
+</body>
+</html>
