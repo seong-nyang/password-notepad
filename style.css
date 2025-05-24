@@ -177,7 +177,14 @@ button:hover {
   transition: background 0.3s ease;
 }
 
+.toggle {
+  background: #ccc;
+}
+
 .toggle.active {
+  background: #6a5acd !important;
+
+body.dark .toggle.active {
   background: #6a5acd !important;
 }
 body.dark .sidebar {
