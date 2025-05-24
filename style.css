@@ -178,7 +178,7 @@ button:hover {
 }
 
 .toggle.active {
-  background: #6a5acd;
+  background: #6a5acd !important;
 }
 body.dark .sidebar {
   background: #2b2b3a;
