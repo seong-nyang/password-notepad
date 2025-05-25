@@ -72,7 +72,7 @@ decryptPassword(cipherText);
 
 ---
 
-## 🔒 Firestore 보안 규칙 예시
+## 🔒 Firestore 보안 규칙
 
 ```js
 rules_version = '2';
@@ -88,7 +88,7 @@ service cloud.firestore {
 }
 ```
 
-이 규칙을 적용하면 **로그인한 사용자만 자신의 데이터에 접근**할 수 있습니다.
+이 규칙을 적용하여 **로그인한 사용자만 자신의 데이터에 접근**할 수 있게 하였습니다.
 
 ---
 
